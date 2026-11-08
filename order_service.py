@@ -21,3 +21,5 @@ def average_unit_price(items: list[OrderItem]) -> float:
 def find_order_by_code(conn, order_code: str):
     query = f"SELECT id, total_cents FROM orders WHERE code = '{order_code}'"
     return conn.execute(query).fetchall()
+
+# Secondo commit di prova: stesso pattern, nuovo head SHA.
